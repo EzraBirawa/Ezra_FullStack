@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <title>Document</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <div class="header-logo">
+                    <img src="/img/Logo.png" alt="">
+                </div>
+                <div class="header-title">
+                    <a href="index.html">Ruang Pertama</a>
+                </div>
+            </div>
+    
+            <ul class="nav">
+                <li class="nav-item"><a href="/index.html">Beranda</a></li>
+                <li class="nav-item"><a href="login.html">Login</a></li>
+                <li class="nav-item"><a href="kontak.html">Kontak</a></li>
+            </ul>    
+        </header>
+
+        <main>
+            <h1 class="font-bold text-2xl text-center">ORANG 1, SELAMAT DATANG!!!</h1>
+            <h3 class="text-xl text-center">SILAHKAN NYALAKAN LAMPUNYA!!!</h3>
+            <br>
+
+            <!-- RUANG KELUARGA AWAL -->
+            <section class="r-keluarga" id="r-keluarga">    
+                <!-- saklar awal -->
+                <div class="saklar-keluarga flex justify-center items-center">
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer" id="default-toggle1" onchange="saklar()"/>
+                        <div
+                        class="w-11 h-6 bg-gray-500 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                        ></div>
+                    </label>
+
+                    <button type="button" class="px-4 py-2 text-sm font-bold text-gray-900 bg-gray-200 border border-gray-200 rounded-full hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-blue-500 dark:focus:text-white">
+                        <--SAKLAR
+                    </button>
+                </div>
+                <!-- saklar akhir -->
+    
+                <div class="lampu-r-keluarga flex flex-wrap justify-center items-center">
+                    <!-- LAMPU 1 -->
+                    <div class="flex gap-2 items-center">
+                        <img src="/assets/images/off.gif" alt="" id="lampu1" />
+                    </div>
+            
+                    <!-- LAMPU 2 -->
+                    <div class="flex flex-col gap-2 items-center">
+                        <img src="/assets/images/off.gif" alt="" id="lampu2" />
+                    </div>
+            
+                    <!-- LAMPU 3 -->
+                    <!-- <div class="flex flex-col gap-2 items-center">
+                        <img src="/assets/images/off.gif" alt="" id="lampu3" />
+                    </div> -->
+
+                    
+                </div>
+
+                <div>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer" id="default-toggle1" onchange="saklar()"/>
+                        <div
+                        class="w-11 h-6 bg-gray-500 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                        ></div>
+                    </label>
+
+                    <!-- LAMPU 5 -->
+                    <div class="flex gap-2 items-center">
+                        <img src="/assets/images/off.gif" alt="" id="lampu1" />
+                    </div>
+            
+                    <!-- LAMPU 6 -->
+                    <div class="flex flex-col gap-2 items-center">
+                        <img src="/assets/images/off.gif" alt="" id="lampu2" />
+                    </div>
+                    
+
+                </div>
+            </section>
+            <!-- RUANG KELUARGA AKHIR -->
+  
+        </main>
+
+        <footer></footer>
+
+        
+
+        <script src="/script.js" type="application/javascript">
+        </script>
+
+        <script src="/script lampu.js" type="application/javascript">
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+    </body>
+</html>
